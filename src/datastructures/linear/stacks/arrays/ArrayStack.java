@@ -1,4 +1,4 @@
 package datastructures.linear.stacks.arrays;
 
-public class ArrayStack {
+public class ArrayStack<E> {
 }
