@@ -5,5 +5,6 @@ public class Main {
         DoublyLinkedList<Integer> doublyLinkedList = new DoublyLinkedList<>();
         doublyLinkedList.add(0, 45);
         doublyLinkedList.add(23);
+        doublyLinkedList.add(23);
     }
 }

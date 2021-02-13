@@ -60,6 +60,8 @@ public class DoublyLinkedList<E> implements ListADT<E> {
         previousNode.setNext(newNode);
         if (nextNode != null) {
             nextNode.setPrevious(newNode);
+        } else {
+            tail = newNode;
         }
         size++;
     }
