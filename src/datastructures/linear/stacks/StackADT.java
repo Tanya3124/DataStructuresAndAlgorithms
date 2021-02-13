@@ -1,4 +1,4 @@
 package datastructures.linear.stacks;
 
-public interface StackADT {
+public interface StackADT<E> {
 }
