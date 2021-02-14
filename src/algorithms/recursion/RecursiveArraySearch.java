@@ -9,6 +9,7 @@ public class RecursiveArraySearch {
     public RecursiveArraySearch(int size) {
         this.array = new int[size];
         fillArray();
+        Arrays.sort(array);
     }
 
     private void fillArray() {
