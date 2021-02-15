@@ -4,12 +4,13 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class RecursiveArraySearch {
-    private int[] array;
+    private final int[] array;
 
     public RecursiveArraySearch(int size) {
         this.array = new int[size];
         fillArray();
-        Arrays.sort(array);
+        Arrays.sort(this.array);
+        System.out.println("this.array = " + Arrays.toString(this.array));
     }
 
     private void fillArray() {
@@ -33,7 +34,7 @@ public class RecursiveArraySearch {
         return searchRecursively(value, startIndex + 1);
     }
 
-    int fact(int n) {
-        return n * fact(n - 1);
+    public static void main(String[] args) {
+
     }
 }
