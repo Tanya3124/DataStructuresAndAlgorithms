@@ -13,4 +13,5 @@ Language: OpenJDK 15 is preferred, JDK 11 or above can be used.
 
 ### Objective
 
-To create a program in Java that can provide a solution in the form of step for the Tower of Hanoi problem.
+To create a program in Java that can provide a solution in the form of step for the Tower of Hanoi problem using
+recursion.
