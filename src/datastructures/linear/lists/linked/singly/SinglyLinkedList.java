@@ -10,7 +10,7 @@ public class SinglyLinkedList<E> implements ListADT<E> {
      * 1. Store the reference value for the first node object in the linked list.
      * 2. Keep track of the first node in the linked list in case it is changed anytime.
      * */
-    private Node<E> head = null;
+    public Node<E> head = null;
 
     /*
      * This size variable will keep the count of the total number of nodes in the linked list except the head node.
