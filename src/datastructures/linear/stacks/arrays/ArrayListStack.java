@@ -36,6 +36,6 @@ public class ArrayListStack<E> implements StackADT<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return stack.isEmpty();
     }
 }
