@@ -22,4 +22,18 @@ public class RecursiveArraySearch {
     public String toString() {
         return Arrays.toString(array);
     }
+
+    private int searchRecursively(
+            int value, int startIndex) {
+        if (array == null || startIndex < 0 || startIndex >= array.length) {
+            return -1;
+        } else if (array[startIndex] == value) {
+            return startIndex;
+        }
+        return searchRecursively(value, startIndex + 1);
+    }
+
+    int fact(int n) {
+        return n * fact(n - 1);
+    }
 }
