@@ -87,6 +87,11 @@ public class DoublyLinkedList<E> implements ListADT<E> {
 
     private E removeFirst() {
         E removedData = null;
+        if (head != null) {
+            removedData = head.getData();
+            head = head.getNext();
+            size--;
+        }
         return removedData;
     }
 
