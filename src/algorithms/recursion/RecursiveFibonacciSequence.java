@@ -18,5 +18,8 @@ public class RecursiveFibonacciSequence {
         System.out.println("Please enter the number of terms you want in your fibonacci sequence: ");
         int numberOfTerms = scanner.nextInt();
         scanner.close();
+        for (int i = 0; i < numberOfTerms; i++) {
+            System.out.print(findFibonacciTerm(i) + ((i < numberOfTerms - 1) ? ", " : "."));
+        }
     }
 }
