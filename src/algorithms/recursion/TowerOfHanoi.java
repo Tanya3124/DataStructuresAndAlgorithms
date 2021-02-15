@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class TowerOfHanoi {
 
+    public static final int ONE_DISK = 1;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many disks do you have?: ");
@@ -19,7 +21,7 @@ public class TowerOfHanoi {
     }
 
     private static void showSteps(int numberOfDisks, char source, char via, char destination) {
-        if (numberOfDisks == 1) {
+        if (numberOfDisks == ONE_DISK) {
             printMoveForOneDisk(source, destination);
             return;
         }
