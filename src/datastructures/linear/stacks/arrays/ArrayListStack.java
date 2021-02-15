@@ -8,6 +8,10 @@ public class ArrayListStack<E> implements StackADT<E> {
 
     private ArrayList<E> stack;
 
+    public ArrayListStack() {
+        this.stack = new ArrayList<>();
+    }
+
     @Override
     public boolean push(E item) {
         return false;
