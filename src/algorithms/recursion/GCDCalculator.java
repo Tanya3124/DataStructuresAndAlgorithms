@@ -14,7 +14,11 @@ public class GCDCalculator {
         System.out.println("GCD(" + maximum + ", " + minimum + ") = " + calculateGCD(maximum, minimum));
     }
 
-    private static int calculateGCD(int i, int i1) {
+    private static int calculateGCD(int firstNumber, int secondNumber) {
+        int remainder = firstNumber % secondNumber;
+        if (remainder == 0) {
+            return secondNumber;
+        }
         return 0;
     }
 }
