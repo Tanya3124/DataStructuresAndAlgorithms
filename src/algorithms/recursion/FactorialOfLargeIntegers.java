@@ -19,7 +19,7 @@ public class FactorialOfLargeIntegers {
         if (number.compareTo(BigInteger.ZERO) < 0) {
             System.err.println("Please enter a positive integer next time!");
         } else {
-            System.out.println("calculateFactorial(" + number + ") = " + calculateFactorial(number));
+            System.out.println("Factorial(" + number + ") = " + calculateFactorial(number));
         }
     }
 }
