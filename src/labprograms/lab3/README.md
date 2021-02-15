@@ -1,6 +1,6 @@
 # Data Structures & Algorithms Lab
 
-## Program No
+## Program No 3
 
 ### Environment
 
@@ -12,4 +12,6 @@ Tool: IntelliJ IDEA Ultimate Edition (Student License).
 Language: OpenJDK 15 is preferred, JDK 11 or above can be used.
 
 ### Objective
+
+To create a program in Java that can demonstrate polynomial addition using linked list.
 
