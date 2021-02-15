@@ -3,6 +3,7 @@ package datastructures.linear.stacks.arrays;
 import datastructures.linear.stacks.StackADT;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class ArrayListStack<E> implements StackADT<E> {
 
@@ -19,6 +20,9 @@ public class ArrayListStack<E> implements StackADT<E> {
 
     @Override
     public E pop() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow!");
+        }
         return null;
     }
 
