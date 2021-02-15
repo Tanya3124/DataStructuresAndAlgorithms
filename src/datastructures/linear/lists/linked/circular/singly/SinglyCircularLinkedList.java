@@ -11,6 +11,7 @@ public class SinglyCircularLinkedList<E> implements ListADT<E> {
 
     public SinglyCircularLinkedList() {
         this.singlyLinkedList = new SinglyLinkedList<>();
+        this.tail = this.singlyLinkedList.head; // make the tail point to the same reference value as the head!
     }
 
     @Override
