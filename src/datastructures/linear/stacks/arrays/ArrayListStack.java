@@ -38,4 +38,15 @@ public class ArrayListStack<E> implements StackADT<E> {
     public boolean isEmpty() {
         return stack.isEmpty();
     }
+
+    @Override
+    public String toString() {
+        ArrayList<E> copyStack = new ArrayList<>(stack);
+        StringBuilder stackString = new StringBuilder();
+        for (int i = 0; i < copyStack.size(); i++) {
+            E value = copyStack.get(copyStack.size() - i - 1);
+            stackString.append(value).append((i < stack.size() - 1) ? "\n" : "");
+        }
+        return stackString.toString();
+    }
 }
