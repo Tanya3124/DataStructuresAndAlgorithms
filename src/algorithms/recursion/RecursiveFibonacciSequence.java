@@ -8,7 +8,7 @@ public class RecursiveFibonacciSequence {
         if (index == 1) {
             return 1;
         }
-        return 0;
+        return findFibonacciTerm(index - 1) + findFibonacciTerm(index - 2);
     }
 
     public static void main(String[] args) {
