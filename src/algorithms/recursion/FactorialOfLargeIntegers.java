@@ -19,7 +19,9 @@ public class FactorialOfLargeIntegers {
         if (number.compareTo(BigInteger.ZERO) < 0) {
             System.err.println("Please enter a positive integer next time!");
         } else {
-            System.out.println("Factorial(" + number + ") = " + calculateFactorial(number));
+            final BigInteger factorial = calculateFactorial(number);
+            System.out.println("Factorial(" + number + ") = " + factorial);
+            System.out.println("Fun Fact!: this factorial number has " + factorial.toString().length() + " digits!");
         }
     }
 }
