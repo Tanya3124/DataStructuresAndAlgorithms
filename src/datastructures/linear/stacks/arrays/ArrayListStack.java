@@ -31,7 +31,7 @@ public class ArrayListStack<E> implements StackADT<E> {
         if (isEmpty()) {
             throw new NoSuchElementException("Stack Underflow!");
         }
-        return null;
+        return stack.get(stack.size() - 1);
     }
 
     @Override
