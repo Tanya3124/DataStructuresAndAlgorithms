@@ -28,6 +28,9 @@ public class ArrayListStack<E> implements StackADT<E> {
 
     @Override
     public E peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow!");
+        }
         return null;
     }
 
