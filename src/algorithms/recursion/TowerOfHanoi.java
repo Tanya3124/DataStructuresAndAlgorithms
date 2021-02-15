@@ -19,5 +19,16 @@ public class TowerOfHanoi {
     }
 
     private static void showSteps(int numberOfDisks, char source, char via, char destination) {
+        if (numberOfDisks == 1) {
+            printMoveForOneDisk(source, destination);
+            return;
+        }
+        showSteps(numberOfDisks - 1, source, destination, via);
+        printMoveForOneDisk(source, destination);
+        showSteps(numberOfDisks - 1, via, source, destination);
+    }
+
+    private static void printMoveForOneDisk(char source, char destination) {
+        System.out.println("Move the top disk from the tower '" + source + "' to tower '" + destination + "'.");
     }
 }
