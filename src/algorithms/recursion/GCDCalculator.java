@@ -11,8 +11,7 @@ public class GCDCalculator {
         scanner.close();
         var maximum = Math.max(firstNumber, secondNumber);
         var minimum = Integer.sum(firstNumber, secondNumber) - maximum;
-        System.out.println("maximum = " + maximum);
-        System.out.println("minimum = " + minimum);
+        System.out.println("GCD(" + maximum + ", " + minimum + ") = " + calculateGCD(maximum, minimum));
     }
 
     private static int calculateGCD(int i, int i1) {
