@@ -1,8 +1,18 @@
 package algorithms.recursion;
 
+import java.util.Scanner;
+
 public class FactorialCalculator {
     public static void main(String[] args) {
-        System.out.println(calculateFactorial(4));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a positive integer: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        if (number < 0) {
+            System.err.println("Please input a positive integer next time!");
+        } else {
+            System.out.println("Factorial(" + number + ") = " + calculateFactorial(number));
+        }
     }
 
     private static int calculateFactorial(int i) {
