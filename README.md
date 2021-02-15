@@ -9,7 +9,9 @@
 ### Subject Courses
 
 1. BCSC 0015 - Applied Data Structures & Algorithms
-2. BCSC 0006 - Data Structures & Algorithms
+2. BCSC 0809 - Applied Data Structures & Algorithms Lab
+3. BCSC 0006 - Data Structures & Algorithms
+4. BCSC 0805 - Data Structures & Algorithms Lab
 
 > Curated By
 >
