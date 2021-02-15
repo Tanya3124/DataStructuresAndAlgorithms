@@ -168,6 +168,7 @@ public class SinglyLinkedList<E> implements ListADT<E> {
         for (int i = 0; i < size; i++) {
             if (currentNode != null) {
                 listString.append(currentNode.getData());
+                currentNode = currentNode.getNext();
             }
             if (i < size - 1) {
                 listString.append(", ");

@@ -9,5 +9,6 @@ public class Main {
         doublyLinkedList.add(23);
         doublyLinkedList.add(23);
         doublyLinkedList.remove();
+        System.out.println(doublyLinkedList);
     }
 }
