@@ -1,4 +1,6 @@
-package datastructures.linear.lists.linked.doubly;
+package datastructures.linear.lists.linked.doubly.main;
+
+import datastructures.linear.lists.linked.doubly.DoublyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
