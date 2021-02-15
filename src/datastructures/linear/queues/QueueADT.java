@@ -1,4 +1,5 @@
 package datastructures.linear.queues;
 
-public interface QueueADT {
+public interface QueueADT<E> {
+
 }
