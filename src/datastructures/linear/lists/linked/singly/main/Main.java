@@ -1,4 +1,6 @@
-package datastructures.linear.lists.linked.singly;
+package datastructures.linear.lists.linked.singly.main;
+
+import datastructures.linear.lists.linked.singly.SinglyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
