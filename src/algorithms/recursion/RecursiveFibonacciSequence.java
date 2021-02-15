@@ -1,5 +1,7 @@
 package algorithms.recursion;
 
+import java.util.Scanner;
+
 public class RecursiveFibonacciSequence {
     private static int findFibonacciTerm(int index) {
         if (index == 0) {
@@ -12,6 +14,9 @@ public class RecursiveFibonacciSequence {
     }
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the number of terms you want in your fibonacci sequence: ");
+        int numberOfTerms = scanner.nextInt();
+        scanner.close();
     }
 }
