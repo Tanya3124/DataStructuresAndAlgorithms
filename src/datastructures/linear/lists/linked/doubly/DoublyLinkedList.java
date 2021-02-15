@@ -80,7 +80,7 @@ public class DoublyLinkedList<E> implements ListADT<E> {
             // we are trying to delete the first element (head node) in the linked list
             return removeFirst();
         } else {
-
+            Node<E> previousNode = getNode(index - 1);
         }
         return null;
     }
