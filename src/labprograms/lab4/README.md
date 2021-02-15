@@ -13,3 +13,4 @@ Language: OpenJDK 15 is preferred, JDK 11 or above can be used.
 
 ### Objective
 
+To create a program in Java that can demonstrate various operations on a Stack (push, pop, peek).
