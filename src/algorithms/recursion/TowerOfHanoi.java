@@ -14,6 +14,7 @@ public class TowerOfHanoi {
         char secondTower = scanner.nextLine().trim().charAt(0);
         char thirdTower = scanner.nextLine().trim().charAt(0);
         scanner.close();
+        System.out.println("Do this to solve the Tower of Hanoi: ");
         showSteps(numberOfDisks, firstTower, secondTower, thirdTower);
     }
 
