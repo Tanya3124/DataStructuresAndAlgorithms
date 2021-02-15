@@ -2,6 +2,7 @@ package algorithms.recursion;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class RecursiveArraySearch {
     private final int[] array;
@@ -35,6 +36,7 @@ public class RecursiveArraySearch {
     }
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
+        scanner.close();
     }
 }
