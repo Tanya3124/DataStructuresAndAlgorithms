@@ -13,6 +13,8 @@ public class FactorialOfLargeIntegers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter any positive integer: ");
+        BigInteger number = scanner.nextBigInteger();
         scanner.close();
     }
 }
