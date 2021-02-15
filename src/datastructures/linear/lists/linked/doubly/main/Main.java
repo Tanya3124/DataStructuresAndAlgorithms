@@ -8,5 +8,6 @@ public class Main {
         doublyLinkedList.add(0, 45);
         doublyLinkedList.add(23);
         doublyLinkedList.add(23);
+        doublyLinkedList.remove();
     }
 }
