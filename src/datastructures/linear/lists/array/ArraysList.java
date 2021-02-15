@@ -2,14 +2,15 @@ package datastructures.linear.lists.array;
 
 import datastructures.linear.lists.ListADT;
 
-public class ArraysList<E> implements ListADT<E> {
+public class ArraysList<E extends Integer> implements ListADT<E> {
 
     private final int MAX_SIZE;
-    private E[] array;
+    private Integer[] array;
     private int currentSize = 0;
 
     public ArraysList(int maxSize) {
         this.MAX_SIZE = maxSize;
+        this.array = new Integer[maxSize];
     }
 
     @Override
