@@ -159,4 +159,9 @@ public class SinglyLinkedList<E> implements ListADT<E> {
         }
         return currentNode;
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }
