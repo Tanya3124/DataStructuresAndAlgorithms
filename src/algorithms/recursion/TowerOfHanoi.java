@@ -1,13 +1,21 @@
 package algorithms.recursion;
 
+import java.util.Scanner;
+
 public class TowerOfHanoi {
 
-
     public static void main(String[] args) {
-        showSteps(4, 'a', 'b', 'c');
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many disks do you have?: ");
+        int numberOfDisks = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Please enter three characters for the towers: ");
+        char firstTower = scanner.nextLine().trim().charAt(0);
+        char secondTower = scanner.nextLine().trim().charAt(0);
+        char thirdTower = scanner.nextLine().trim().charAt(0);
+        scanner.close();
     }
 
-    private static void showSteps
-            (int numberOfDisks, char source, char via, char destination) {
+    private static void showSteps(int numberOfDisks, char source, char via, char destination) {
     }
 }
