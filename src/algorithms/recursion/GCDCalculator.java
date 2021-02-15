@@ -19,6 +19,6 @@ public class GCDCalculator {
         if (remainder == 0) {
             return secondNumber;
         }
-        return 0;
+        return calculateGCD(secondNumber, remainder);
     }
 }
