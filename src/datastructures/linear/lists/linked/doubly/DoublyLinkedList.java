@@ -68,7 +68,8 @@ public class DoublyLinkedList<E> implements ListADT<E> {
 
     @Override
     public E remove() {
-        return null;
+        // remove the last element from the linked list
+        return remove(size - 1);
     }
 
     @Override
