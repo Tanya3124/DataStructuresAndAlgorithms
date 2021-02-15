@@ -16,5 +16,10 @@ public class FactorialOfLargeIntegers {
         System.out.println("Please enter any positive integer: ");
         BigInteger number = scanner.nextBigInteger();
         scanner.close();
+        if (number.compareTo(BigInteger.ZERO) < 0) {
+            System.err.println("Please enter a positive integer next time!");
+        } else {
+            System.out.println("calculateFactorial(" + number + ") = " + calculateFactorial(number));
+        }
     }
 }
