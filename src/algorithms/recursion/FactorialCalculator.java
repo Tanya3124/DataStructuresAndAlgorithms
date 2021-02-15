@@ -15,7 +15,10 @@ public class FactorialCalculator {
         }
     }
 
-    private static int calculateFactorial(int i) {
-        return 0;
+    private static int calculateFactorial(int number) {
+        if (number == 1 || number == 0) {
+            return 1;
+        }
+        return number * calculateFactorial(number - 1);
     }
 }
