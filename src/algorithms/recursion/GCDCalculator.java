@@ -1,8 +1,11 @@
 package algorithms.recursion;
 
+import java.util.Scanner;
+
 public class GCDCalculator {
     public static void main(String[] args) {
-        calculateGCD(64, 8);
+        Scanner scanner = new Scanner(System.in);
+        scanner.close();
     }
 
     private static int calculateGCD(int i, int i1) {
