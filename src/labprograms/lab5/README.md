@@ -1,6 +1,6 @@
 # Data Structures & Algorithms Lab
 
-## Program No
+## Program No 5
 
 ### Environment
 
@@ -13,3 +13,4 @@ Language: OpenJDK 15 is preferred, JDK 11 or above can be used.
 
 ### Objective
 
+To create a program in Java to convert an infix expression into a postfix expression.
