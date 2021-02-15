@@ -74,6 +74,18 @@ public class DoublyLinkedList<E> implements ListADT<E> {
 
     @Override
     public E remove(int index) throws IndexOutOfBoundsException {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        } else if (index == 0) {
+            // we are trying to delete the first element (head node) in the linked list
+            return removeFirst();
+        } else {
+
+        }
+        return null;
+    }
+
+    private E removeFirst() {
         return null;
     }
 
