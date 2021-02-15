@@ -25,14 +25,27 @@ public class RecursiveArraySearch {
         return Arrays.toString(array);
     }
 
-    private int searchRecursively(
-            int value, int startIndex) {
+    private int searchRecursively(int value, int startIndex) {
         if (array == null || startIndex < 0 || startIndex >= array.length) {
             return -1;
         } else if (array[startIndex] == value) {
             return startIndex;
         }
         return searchRecursively(value, startIndex + 1);
+    }
+
+    private int binarySearch(int value, int startIndex, int endIndex) {
+        if (startIndex > endIndex) {
+            return -1;
+        }
+        int middleIndex = (startIndex + endIndex) / 2;
+        if (value == this.array[middleIndex]) {
+            return middleIndex;
+        } else if (value < this.array[middleIndex]) {
+            return binarySearch(value, startIndex, middleIndex - 1);
+        } else {
+            return binarySearch(value, middleIndex + 1, endIndex);
+        }
     }
 
     public static void main(String[] args) {
