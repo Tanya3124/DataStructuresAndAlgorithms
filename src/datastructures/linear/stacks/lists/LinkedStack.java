@@ -13,7 +13,7 @@ public class LinkedStack<E> implements StackADT<E> {
 
     @Override
     public boolean push(E item) {
-        return false;
+        return stack.add(item);
     }
 
     @Override
