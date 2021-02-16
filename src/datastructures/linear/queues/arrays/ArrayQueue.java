@@ -6,6 +6,12 @@ import java.util.NoSuchElementException;
 
 public class ArrayQueue<E> implements QueueADT<E> {
 
+    private final int MAX_SIZE;
+
+    public ArrayQueue(int size) {
+        this.MAX_SIZE = size;
+    }
+
     @Override
     public boolean enqueue(E item) {
         return false;
