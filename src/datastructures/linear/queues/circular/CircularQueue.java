@@ -1,5 +1,10 @@
 package datastructures.linear.queues.circular;
 
-public class CircularQueue<E> {
+import datastructures.linear.queues.arrays.ArrayQueue;
 
+public class CircularQueue<E> extends ArrayQueue<E> {
+
+    public CircularQueue(int size) {
+        super(size);
+    }
 }
