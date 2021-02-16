@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class RecursivePowerCalculator {
     private static int calculate(int base, int exponent) {
+        if (exponent == 1) {
+            return base;
+        }
         return 0;
     }
 
