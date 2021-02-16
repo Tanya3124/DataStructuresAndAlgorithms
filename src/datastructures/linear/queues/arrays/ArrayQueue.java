@@ -20,7 +20,12 @@ public class ArrayQueue<E> implements QueueADT<E> {
 
     @Override
     public boolean enqueue(E item) {
-        return false;
+        if (rear == MAX_SIZE) {
+            System.err.println("Queue is full! Please wait for some item to be deleted!");
+            return false;
+        }
+        queue[++rear] = item;
+        return true;
     }
 
     @Override
