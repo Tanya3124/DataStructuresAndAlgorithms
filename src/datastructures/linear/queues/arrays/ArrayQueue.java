@@ -13,6 +13,9 @@ public class ArrayQueue<E> implements QueueADT<E> {
 
     public ArrayQueue(int size) {
         this.MAX_SIZE = size;
+        this.front = 0;
+        this.rear = -1;
+        this.queue = new Object[MAX_SIZE];
     }
 
     @Override
