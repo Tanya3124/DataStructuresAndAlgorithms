@@ -112,7 +112,7 @@ public class DoublyLinkedList<E> implements ListADT<E> {
      * @param index An non-negative index from the linked list.
      * @return The node at the specified index.
      */
-    private Node<E> getNode(int index) {
+    public Node<E> getNode(int index) {
         Node<E> currentNode = head;
         /*
          * using a loop to traverse the whole linked list,

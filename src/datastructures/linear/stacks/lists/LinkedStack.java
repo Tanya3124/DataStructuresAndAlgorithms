@@ -31,7 +31,10 @@ public class LinkedStack<E> implements StackADT<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow!");
+        }
+        return stack.getNode(top).getData();
     }
 
     @Override
