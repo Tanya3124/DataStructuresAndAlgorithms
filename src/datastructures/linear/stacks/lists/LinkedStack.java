@@ -6,13 +6,16 @@ import datastructures.linear.stacks.StackADT;
 public class LinkedStack<E> implements StackADT<E> {
 
     private DoublyLinkedList<E> stack;
+    private int top;
 
     public LinkedStack() {
+        this.top = -1;
         this.stack = new DoublyLinkedList<>();
     }
 
     @Override
     public boolean push(E item) {
+        top++;
         return stack.add(item);
     }
 
