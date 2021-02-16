@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 public class ListQueue<E> implements QueueADT<E> {
 
     private LinkedList<E> queue;
-    private int top = 0;
+    private int front = 0;
     private int rear = -1;
 
     public ListQueue() {
@@ -24,6 +24,7 @@ public class ListQueue<E> implements QueueADT<E> {
 
     @Override
     public E dequeue() throws NoSuchElementException {
-        return null;
+        front++;
+        return queue.removeFirst();
     }
 }
