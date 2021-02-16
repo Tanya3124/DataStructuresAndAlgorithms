@@ -36,7 +36,10 @@ public class ArrayStack<E> implements StackADT<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow");
+        }
+        return (E) stack[top];
     }
 
     @Override
