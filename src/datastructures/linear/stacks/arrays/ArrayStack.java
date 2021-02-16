@@ -6,10 +6,12 @@ public class ArrayStack<E> implements StackADT<E> {
 
     private final int MAX_SIZE;
     private int top;
+    private Object[] stack;
 
     public ArrayStack(int size) {
         this.MAX_SIZE = size;
         this.top = -1;
+        this.stack = new Object[size];
     }
 
     @Override
