@@ -30,6 +30,12 @@ public class CircularQueue<E> extends ArrayQueue<E> {
 
     @Override
     public E dequeue() throws NoSuchElementException {
-        return super.dequeue();
+        if (front == -1) {
+            throw new NoSuchElementException("Queue is empty!");
+        }
+        if (front == MAX_SIZE) {
+            front = 0;
+        }
+        return (E) queue[front++];
     }
 }
