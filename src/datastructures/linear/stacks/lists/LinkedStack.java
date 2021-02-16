@@ -36,6 +36,6 @@ public class LinkedStack<E> implements StackADT<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return top == -1;
     }
 }
