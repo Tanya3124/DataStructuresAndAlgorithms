@@ -8,6 +8,8 @@ import java.util.NoSuchElementException;
 public class ListQueue<E> implements QueueADT<E> {
 
     private LinkedList<E> queue;
+    private int top = 0;
+    private int rear = -1;
 
     public ListQueue() {
         this.queue = new LinkedList<>();
