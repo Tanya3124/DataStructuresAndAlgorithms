@@ -16,7 +16,12 @@ public class ArrayStack<E> implements StackADT<E> {
 
     @Override
     public boolean push(E item) {
-        return false;
+        top = top + 1;
+        if (top >= MAX_SIZE) {
+            throw new IndexOutOfBoundsException("Stack Overflow!");
+        }
+        stack[top] = item;
+        return true;
     }
 
     @Override
