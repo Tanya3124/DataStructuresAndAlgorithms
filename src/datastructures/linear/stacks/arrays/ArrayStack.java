@@ -2,6 +2,8 @@ package datastructures.linear.stacks.arrays;
 
 import datastructures.linear.stacks.StackADT;
 
+import java.util.NoSuchElementException;
+
 public class ArrayStack<E> implements StackADT<E> {
 
     private final int MAX_SIZE;
@@ -26,7 +28,10 @@ public class ArrayStack<E> implements StackADT<E> {
 
     @Override
     public E pop() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow!");
+        }
+        return (E) stack[top--];
     }
 
     @Override
