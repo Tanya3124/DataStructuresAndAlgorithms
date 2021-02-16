@@ -30,6 +30,9 @@ public class ArrayQueue<E> implements QueueADT<E> {
 
     @Override
     public E dequeue() throws NoSuchElementException {
-        return null;
+        if (front == 0) {
+            throw new NoSuchElementException("The Queue is empty!");
+        }
+        return (E) queue[front++];
     }
 }
