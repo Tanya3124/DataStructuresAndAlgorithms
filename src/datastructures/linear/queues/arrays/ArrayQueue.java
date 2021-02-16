@@ -1,4 +1,4 @@
 package datastructures.linear.queues.arrays;
 
-public class ArrayQueue {
+public class ArrayQueue<E> {
 }
