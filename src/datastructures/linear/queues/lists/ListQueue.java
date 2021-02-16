@@ -17,7 +17,9 @@ public class ListQueue<E> implements QueueADT<E> {
 
     @Override
     public boolean enqueue(E item) {
-        return false;
+        queue.addLast(item);
+        rear++;
+        return true;
     }
 
     @Override
