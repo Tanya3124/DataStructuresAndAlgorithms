@@ -5,9 +5,11 @@ import datastructures.linear.stacks.StackADT;
 public class ArrayStack<E> implements StackADT<E> {
 
     private final int MAX_SIZE;
+    private int top;
 
     public ArrayStack(int size) {
         this.MAX_SIZE = size;
+        this.top = -1;
     }
 
     @Override
