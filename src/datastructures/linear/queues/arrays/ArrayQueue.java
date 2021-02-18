@@ -35,4 +35,29 @@ public class ArrayQueue<E> implements QueueADT<E> {
         }
         return (E) queue[front++];
     }
+
+    @Override
+    public boolean offer(E item) {
+        return false;
+    }
+
+    @Override
+    public E remove() throws NoSuchElementException {
+        return null;
+    }
+
+    @Override
+    public E poll() {
+        return null;
+    }
+
+    @Override
+    public E peek() {
+        return null;
+    }
+
+    @Override
+    public E element() throws NoSuchElementException {
+        return null;
+    }
 }
