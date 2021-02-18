@@ -27,4 +27,29 @@ public class ListQueue<E> implements QueueADT<E> {
         front++;
         return queue.removeFirst();
     }
+
+    @Override
+    public boolean offer(E item) {
+        return false;
+    }
+
+    @Override
+    public E remove() throws NoSuchElementException {
+        return null;
+    }
+
+    @Override
+    public E poll() {
+        return null;
+    }
+
+    @Override
+    public E peek() {
+        return null;
+    }
+
+    @Override
+    public E element() throws NoSuchElementException {
+        return null;
+    }
 }
