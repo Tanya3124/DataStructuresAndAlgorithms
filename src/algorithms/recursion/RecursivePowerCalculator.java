@@ -7,7 +7,7 @@ public class RecursivePowerCalculator {
         if (exponent == 1) {
             return base;
         }
-        return calculate(base, exponent - 1);
+        return base * calculate(base, exponent - 1);
     }
 
     public static void main(String[] args) {
