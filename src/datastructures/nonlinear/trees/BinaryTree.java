@@ -15,5 +15,12 @@ public class BinaryTree<E> {
         this.rootNode = rootNode;
     }
 
-
+    /**
+     * This method will simply return the data in the root node of the Binary Tree.
+     *
+     * @return the data in the root node of the current binary tree.
+     */
+    public E getData() {
+        return null;
+    }
 }
