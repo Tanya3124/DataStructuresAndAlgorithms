@@ -15,4 +15,9 @@ public class Node<E> {
         this.leftChild = null;
         this.rightChild = null;
     }
+
+    @Override
+    public String toString() {
+        return data.toString();
+    }
 }
