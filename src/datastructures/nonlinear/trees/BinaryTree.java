@@ -23,4 +23,13 @@ public class BinaryTree<E> {
     public E getData() {
         return null;
     }
+
+    /**
+     * This method will tell whether the current tree/node is a leaf node.
+     *
+     * @return true if the current tree/node is a leaf, otherwise false.
+     */
+    public boolean isLeaf() {
+        return false;
+    }
 }
