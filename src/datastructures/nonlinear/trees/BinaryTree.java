@@ -40,4 +40,20 @@ public class BinaryTree<E> {
             return rootNode.getLeftChild() == null && rootNode.getRightChild() == null;
         } else return false;
     }
+
+    public BinaryTree<E> getLeftSubTree() {
+        if (this.rootNode != null && this.rootNode.getLeftChild() != null) {
+            return new BinaryTree<>(this.rootNode.getLeftChild());
+        } else {
+            return null;
+        }
+    }
+
+    public BinaryTree<E> getRightSubTree() {
+        if (this.rootNode != null && this.rootNode.getRightChild() != null) {
+            return new BinaryTree<>(this.rootNode.getRightChild());
+        } else {
+            return null;
+        }
+    }
 }
