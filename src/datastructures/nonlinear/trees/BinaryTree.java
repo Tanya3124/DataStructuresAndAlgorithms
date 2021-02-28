@@ -15,6 +15,12 @@ public class BinaryTree<E> {
         this.rootNode = rootNode;
     }
 
+    public BinaryTree(E data, BinaryTree<E> leftSubTree, BinaryTree<E> rightSubTree) {
+        this.rootNode = new Node<>(data);
+        this.rootNode.setLeftChild(leftSubTree != null ? leftSubTree.rootNode : null);
+        this.rootNode.setRightChild(rightSubTree != null ? rightSubTree.rootNode : null);
+    }
+
     /**
      * This method will simply return the data in the root node of the Binary Tree.
      *

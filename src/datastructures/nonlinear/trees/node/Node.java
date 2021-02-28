@@ -5,10 +5,10 @@ public class Node<E> {
     private final E data;
 
     // reference to the left child node
-    private final Node<E> leftChild;
+    private Node<E> leftChild;
 
     // reference to the right child node
-    private final Node<E> rightChild;
+    private Node<E> rightChild;
 
     public Node(E data) {
         this.data = data;
@@ -34,5 +34,13 @@ public class Node<E> {
 
     public Node<E> getRightChild() {
         return rightChild;
+    }
+
+    public void setLeftChild(Node<E> leftChild) {
+        this.leftChild = leftChild;
+    }
+
+    public void setRightChild(Node<E> rightChild) {
+        this.rightChild = rightChild;
     }
 }
