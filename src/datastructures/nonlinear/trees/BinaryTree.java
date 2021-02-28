@@ -14,4 +14,5 @@ public class BinaryTree<E> {
     public BinaryTree(Node<E> rootNode) {
         this.rootNode = rootNode;
     }
+
 }
