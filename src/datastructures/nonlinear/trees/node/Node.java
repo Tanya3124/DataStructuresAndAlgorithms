@@ -16,6 +16,13 @@ public class Node<E> {
         this.rightChild = null;
     }
 
+    /**
+     * This method will print the node of the Binary Tree.
+     * Since the data of the node is already a reference type it must have a toString() method.
+     * We will use the same toString() method from the type E to print the data of the tree node.
+     *
+     * @return The String representation of the data inside the node.
+     */
     @Override
     public String toString() {
         return data.toString();
