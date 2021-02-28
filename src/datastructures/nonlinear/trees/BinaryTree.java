@@ -1,4 +1,4 @@
 package datastructures.nonlinear.trees;
 
-public class BinaryTree {
+public class BinaryTree<E> {
 }
