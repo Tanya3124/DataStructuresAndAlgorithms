@@ -56,4 +56,23 @@ public class BinaryTree<E> {
             return null;
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder dataString = new StringBuilder();
+        toString(this.rootNode, 1, dataString);
+        return dataString.toString();
+    }
+
+    private void toString(Node<E> node, int depth, StringBuilder dataString) {
+        dataString.append(" ".repeat(Math.max(0, depth - 1)));
+        if (node == null) {
+            dataString.append("null\n");
+        } else {
+            dataString.append(node.toString());
+            dataString.append("\n");
+            toString(this.rootNode.getLeftChild(), depth + 1, dataString);
+            toString(this.rootNode.getRightChild(), depth + 1, dataString);
+        }
+    }
 }
