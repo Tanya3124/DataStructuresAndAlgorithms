@@ -27,4 +27,12 @@ public class Node<E> {
     public String toString() {
         return data.toString();
     }
+
+    public Node<E> getLeftChild() {
+        return leftChild;
+    }
+
+    public Node<E> getRightChild() {
+        return rightChild;
+    }
 }

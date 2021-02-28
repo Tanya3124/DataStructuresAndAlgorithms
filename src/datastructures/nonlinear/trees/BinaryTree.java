@@ -30,6 +30,8 @@ public class BinaryTree<E> {
      * @return true if the current tree/node is a leaf, otherwise false.
      */
     public boolean isLeaf() {
-        return false;
+        if (rootNode != null) {
+            return rootNode.getLeftChild() == null && rootNode.getRightChild() == null;
+        } else return false;
     }
 }
