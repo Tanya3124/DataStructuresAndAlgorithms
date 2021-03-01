@@ -26,7 +26,7 @@ public class BinaryTree<E> {
      * @return the data in the root node of the current binary tree.
      */
     public E getData() {
-        return null;
+        return this.rootNode.getData();
     }
 
     /**
