@@ -43,4 +43,8 @@ public class Node<E> {
     public void setRightChild(Node<E> rightChild) {
         this.rightChild = rightChild;
     }
+
+    public E getData() {
+        return data;
+    }
 }
