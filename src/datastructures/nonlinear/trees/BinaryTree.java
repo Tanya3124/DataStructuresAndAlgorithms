@@ -5,6 +5,9 @@ import datastructures.nonlinear.trees.node.Node;
 public class BinaryTree<E> {
     private Node<E> rootNode;
 
+    public Node<E> getRootNode() {
+        return rootNode;
+    }
 
     public BinaryTree() {
         this.rootNode = null;
